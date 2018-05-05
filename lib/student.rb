@@ -11,7 +11,6 @@ class Student < InteractiveRecord
   end
 
 def self.find_by(arg)
-  binding.pry
   sql = "SELECT * FROM #{self.table_name} WHERE
    #{arg.keys[0]} = ?"
 
